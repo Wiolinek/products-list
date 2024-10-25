@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product name",
+      "description": "Subtitle with basic ingredients",
+      "image": "/images/6.png",
+      "categories": ["dogs", "humans"],
+      "price": 49.9,
+      "rating": 4.8,
+      "reviews": 12
+    },
+    {
+      "id": 2,
+      "name": "Product name",
+      "description": "Subtitle with basic ingredients",
+      "image": "/images/7.png",
+      "categories": ["dogs"],
+      "price": 49.9,
+      "rating": 4.8,
+      "reviews": 12
+    },
+    {
+      "id": 3,
+      "name": "Product name",
+      "description": "Subtitle with basic ingredients",
+      "image": "/images/6.png",
+      "categories": ["dogs", "humans"],
+      "price": 49.9,
+      "rating": 4.8,
+      "reviews": 12
+    },
+    {
+      "id": 4,
+      "name": "Product name",
+      "description": "Subtitle with basic ingredients",
+      "image": "/images/7.png",
+      "categories": ["dogs"],
+      "price": 49.9,
+      "rating": 4.8,
+      "reviews": 12
+    }
+  ]
+}

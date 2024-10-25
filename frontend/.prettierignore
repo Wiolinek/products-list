@@ -1,0 +1,13 @@
+node_modules/
+
+build/
+
+public/
+
+src/assets
+
+.eslintrc.*
+.env
+
+docs/
+*.md

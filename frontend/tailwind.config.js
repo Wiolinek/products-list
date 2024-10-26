@@ -10,10 +10,10 @@ module.exports = {
           'radial-gradient(102.89% 88.03% at 117.2% 102.58%, #FFFBF2 0%, #F8F3E9 0.01%, #FFFFFF 100%)',
       },
       boxShadow: {
-        'custom-box-shadow': '0px 0px 10px 0px rgba(0, 0, 0, 0.070588)',
+        'custom-box-shadow': '0px 0px 10px 0px #00000012',
       },
       dropShadow: {
-        'custom-shadow': '0px 0px 20px rgba(0, 0, 0, 0.070588)',
+        'custom-drop-shadow': '0px 0px 20px #00000012',
       },
       fontFamily: {
         sans: ['Raleway', 'sans-serif'],
@@ -21,6 +21,9 @@ module.exports = {
       },
       textColor: {
         default: '#151515',
+      },
+      gridTemplateColumns: {
+        'custom-grid-col': 'repeat(auto-fit, minmax(200px, 278px))',
       },
     },
   },

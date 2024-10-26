@@ -1,8 +1,7 @@
-import React from 'react';
 import ProductFilter from './ProductFilter';
-import Heading from './Heading';
+import Heading from './ui/Heading';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="flex flex-col items-center gap-10 mt-[58px]">
       <Heading title="The Fab 4" type="h1" variant="transparent" />

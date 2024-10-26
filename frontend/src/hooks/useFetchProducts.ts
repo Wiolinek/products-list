@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Product } from '../types';
+import { Product } from '../interfaces/product.interface';
 
 const useFetchProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);

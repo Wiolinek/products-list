@@ -1,22 +1,27 @@
-import React from 'react';
 import ProductDetails from './ProductDetails';
-import { Product } from '../../types';
+import Button from '../ui/Button';
+import { Product } from '../../interfaces/product.interface';
 
-interface ProductItemProps {
+interface ProductCardProps {
   product: Product;
 }
 
-const ProductCard: React.FC<ProductItemProps> = ({ product }) => {
+const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="w-[278px] h-[601px] flex flex-col gap-4 rounded-[20px] shadow-custom-box-shadow">
-      <div className="relative h-[283px] bg-neutral-grandient shadow-custom-box-shadow rounded-[20px] overflow-hidden">
-        <img src={product.image} alt={product.name} className="absolute top-2.5 left-[41px]" />
+    <article className="w-full max-w-[278px] flex flex-col gap-4 ">
+      <div className="relative h-[283px] bg-neutral-grandient shadow-custom-box-shadow rounded-[20px] ">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="absolute top-2.5 left-[41px] object-cover"
+          loading="lazy"
+        />
       </div>
-      <ProductDetails product={product} />
-      <button className="h-12 w-full bg-green-gradient rounded-[14px] text-white font-bold leading-5">
-        Add to Cart
-      </button>
-    </div>
+      <div className="flex flex-col gap-4 px-4 pb-4">
+        <ProductDetails product={product} />
+        <Button title="Add to Cart" size="large" variant="green" onClick={() => {}} />
+      </div>
+    </article>
   );
 };
 

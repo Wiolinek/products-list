@@ -20,7 +20,9 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
             <ReviewStar key={index} filled={index < filledStars} />
           ))}
         </span>
-        <span className="font-medium leading-6 drop-shadow-custom-drop-shadow">{product.rating}</span>
+        <span className="font-medium leading-6 drop-shadow-custom-drop-shadow">
+          {product.rating}
+        </span>
       </div>
       <a
         href="/"

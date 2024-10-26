@@ -12,7 +12,11 @@ const ProductList = () => {
           aria-label="Products List"
         >
           {products.map((product) => (
-            <li key={product.id} className="flex justify-center shadow-custom-box-shadow rounded-[20px] overflow-hidden" aria-label={product.name}>
+            <li
+              key={product.id}
+              className="flex justify-center shadow-custom-box-shadow rounded-[20px] overflow-hidden"
+              aria-label={product.name}
+            >
               <ProductCard product={product} />
             </li>
           ))}

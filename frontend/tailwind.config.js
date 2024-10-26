@@ -11,6 +11,7 @@ module.exports = {
       },
       boxShadow: {
         'custom-box-shadow': '0px 0px 10px 0px #00000012',
+        'inner-box-shadow': 'inset 0 0 0 1px #15151533',
       },
       dropShadow: {
         'custom-drop-shadow': '0px 0px 20px #00000012',

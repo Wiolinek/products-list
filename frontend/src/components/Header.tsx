@@ -1,4 +1,4 @@
-import ProductFilter from './ProductFilter';
+import ProductFilter from './ToggleFilter';
 import Heading from './ui/Heading';
 
 const Header = () => {

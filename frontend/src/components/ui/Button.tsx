@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const sizeClasses = {
-  small: 'h-full py-2 px-10',
+  small: 'h-full py-2 px-6 sm:px-10',
   large: 'w-full py-3.5',
 };
 

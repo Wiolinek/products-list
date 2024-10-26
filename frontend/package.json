@@ -1,5 +1,6 @@
 {
   "name": "product-list",
+  "homepage": "https://Wiolinek.github.io/products-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,14 +19,14 @@
   },
   "scripts": {
     "dev": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "start:json-server": "json-server --watch db.json --port 5000",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [

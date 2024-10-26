@@ -11,7 +11,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <article className="w-full max-w-[278px] flex flex-col gap-4 ">
       <div className="relative h-[283px] bg-neutral-grandient shadow-custom-box-shadow rounded-[20px] ">
         <img
-          src={product.image}
+          src={`${process.env.PUBLIC_URL}/${product.image}`}
           alt={product.name}
           className="absolute top-2.5 left-[41px] object-cover"
           loading="lazy"

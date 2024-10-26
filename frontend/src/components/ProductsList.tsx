@@ -1,17 +1,20 @@
-import ProductCard from './ProductCard/ProductCard';
-import useFetchProducts from '../hooks/useFetchProducts';
+import ProductCard from 'components/ProductCard/ProductCard';
+import useFetchProducts from 'hooks/useFetchProducts';
+import { useAppContext } from 'context/AppContext';
+import { Product } from 'interfaces/product.interface';
 
 const ProductList = () => {
-  const { products, loading, error } = useFetchProducts();
+  const { selectedFilter } = useAppContext();
+  const { filteredProducts, loading, error } = useFetchProducts(selectedFilter);
 
   return (
     <>
-      {products && !loading && !error ? (
+      {filteredProducts && !loading && !error ? (
         <ul
           className="grid grid-cols-custom-grid-col gap-4 pt-10 pb-[79px] px-4 justify-center"
           aria-label="Products List"
         >
-          {products.map((product) => (
+          {filteredProducts.map((product: Product) => (
             <li
               key={product.id}
               className="flex justify-center shadow-custom-box-shadow rounded-[20px] overflow-hidden"

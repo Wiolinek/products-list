@@ -1,5 +1,5 @@
-import { Product } from '../../interfaces/product.interface';
-import ReviewStar from './ReviewStar';
+import { Product } from 'interfaces/product.interface';
+import ReviewStar from 'components/ProductCard/ReviewStar';
 
 interface ProductDetailsProps {
   product: Product;

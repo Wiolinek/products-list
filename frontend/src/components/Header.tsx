@@ -1,5 +1,5 @@
-import ProductFilter from './ToggleFilter';
-import Heading from './ui/Heading';
+import ProductFilter from 'components/ToggleFilter';
+import Heading from 'components/ui/Heading';
 
 const Header = () => {
   return (

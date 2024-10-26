@@ -1,4 +1,4 @@
-import { ReactComponent as StarIcon } from '../../assets/icons/star.svg';
+import { ReactComponent as StarIcon } from 'assets/icons/star.svg';
 
 interface ReviewStarProps {
   filled?: boolean;

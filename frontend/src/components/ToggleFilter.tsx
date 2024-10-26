@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import Button from './ui/Button';
+import { Filters } from 'interfaces/filter.enum';
+import { useAppContext } from 'context/AppContext';
+import Button from 'components/ui/Button';
 
 const ToggleFilter = () => {
-  const [selectedFilter, setSelectedFilter] = useState<'dogs' | 'humans'>('dogs');
+  const { selectedFilter, setSelectedFilter } = useAppContext();
 
   return (
     <div className="flex justify-center" role="group" aria-label="Product Category Filter">
@@ -10,14 +11,14 @@ const ToggleFilter = () => {
         <Button
           title="For Dogs"
           size="small"
-          variant={selectedFilter === 'dogs' ? 'yellow' : 'white'}
-          onClick={() => setSelectedFilter('dogs')}
+          variant={selectedFilter === Filters.dogs ? 'yellow' : 'white'}
+          onClick={() => setSelectedFilter(Filters.dogs)}
         />
         <Button
           title="For Humans"
           size="small"
-          variant={selectedFilter === 'humans' ? 'yellow' : 'white'}
-          onClick={() => setSelectedFilter('humans')}
+          variant={selectedFilter === Filters.humans ? 'yellow' : 'white'}
+          onClick={() => setSelectedFilter(Filters.humans)}
         />
       </div>
     </div>

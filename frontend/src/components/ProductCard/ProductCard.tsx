@@ -1,6 +1,6 @@
-import ProductDetails from './ProductDetails';
-import Button from '../ui/Button';
-import { Product } from '../../interfaces/product.interface';
+import ProductDetails from 'components/ProductCard/ProductDetails';
+import Button from 'components/ui/Button';
+import { Product } from 'interfaces/product.interface';
 
 interface ProductCardProps {
   product: Product;

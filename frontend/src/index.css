@@ -5,3 +5,12 @@
 body {
   @apply text-default;
 }
+
+@layer base {
+  h1 {
+    @apply font-nunito font-extrabold text-[40px] leading-snug text-center;
+  }
+  h2 {
+    @apply w-full text-base text-center font-semibold leading-6;
+  }
+}

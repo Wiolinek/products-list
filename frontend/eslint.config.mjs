@@ -7,6 +7,7 @@ import globals from 'globals';
 
 export default [
   {
+    ignores: ['build/static/js/*', '*.min.js', '**/*.test.js', '**/*.spec.js'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

@@ -1,8 +1,8 @@
 # Products List React Application
 
-This is a React application that displays a list of products fetched from a JSON server. The application allows users to filter products based on their categories (e.g., Dogs, Humans).
+This is a React application that displays a list of products fetched from a JSON server.
 
-## Live demo [_here_](https://megaclinic.ultra-violet.codes)
+## Live demo [_here_](https://wiolinek.github.io/products-list/)
 
 ## Table of Contents
 
@@ -26,11 +26,10 @@ This is a React application that displays a list of products fetched from a JSON
 
 ## Technologies Used
 
-- React
+- React / Create React App
 - TypeScript
 - Tailwind CSS
 - json-server
-- Create React App
 
 ## Screenshots
 

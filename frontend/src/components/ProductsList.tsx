@@ -11,7 +11,7 @@ const ProductList = () => {
     <>
       {filteredProducts && !loading && !error ? (
         <ul
-          className="grid grid-cols-custom-grid-col gap-4 pt-10 pb-[79px] px-4 justify-center"
+          className="grid grid-cols-custom-grid-col gap-4 pt-10 pb-[79px] px-4 justify-center max-w-[1441px] mx-auto"
           aria-label="Products List"
         >
           {filteredProducts.map((product: Product) => (
@@ -25,7 +25,7 @@ const ProductList = () => {
           ))}
         </ul>
       ) : (
-        <div className="flex justify-center gap-4 pt-10 pb-[79px]">
+        <div className="flex justify-center gap-4 pt-10 px-4 pb-[79px] max-w-[1441px] mx-auto">
           {loading && (
             <p className="text-xl" role="alert">
               Loading products...

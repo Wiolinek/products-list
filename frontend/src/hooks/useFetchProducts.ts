@@ -13,8 +13,20 @@ const useFetchProducts = (selectedFilter: Filters) => {
       setLoading(true);
       setError(null);
 
+      const API_URL =
+        process.env.NODE_ENV === 'development'
+          ? 'http://localhost:5000/products'
+          : 'https://my-json-server.typicode.com/Wiolinek/products_api/products';
+
       try {
-        const response = await fetch('http://localhost:5000/products');
+        const response = await fetch(API_URL, {
+          method: 'GET',
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            Accept: 'application/json;odata.metadata=full',
+            'Content-Type': 'application/json',
+          },
+        });
 
         if (!response.ok) {
           throw new Error('Network response was not ok');

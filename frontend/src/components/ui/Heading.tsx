@@ -4,7 +4,7 @@ interface HeadingProps {
   variant: 'transparent' | 'yellow';
 }
 
-const Header = ({ title, type, variant = 'transparent' }: HeadingProps) => {
+const Heading = ({ title, type, variant = 'transparent' }: HeadingProps) => {
   const variantClasses =
     variant === 'yellow'
       ? 'h-14 bg-[#FFE55A] max-w-[1441px] p-4 sm:p-0 rounded-tl-full rounded-br-full rounded-tr-full flex justify-center items-center'
@@ -18,4 +18,4 @@ const Header = ({ title, type, variant = 'transparent' }: HeadingProps) => {
   );
 };
 
-export default Header;
+export default Heading;
